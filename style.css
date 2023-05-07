@@ -8,10 +8,9 @@
 }
 ul{
     display: grid;
-    grid-template-rows: repeat(9,15%);
+    grid-template-rows: repeat(9,1fr);
     list-style: none;
     padding: 0;
-    
 }
 ul>* , h1{
     display: flex;
@@ -20,7 +19,6 @@ ul>* , h1{
     cursor: pointer;
     height: 30px;
     justify-self: start;
-    padding-left: 20px;
     transition: .4s;
 }
 ul>*:hover{
@@ -30,20 +28,19 @@ h1{
     font-size: 30px;
     letter-spacing: 1.5px;
     margin-top: 30px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;   
+    padding-left: 20px;  
 }
-li svg{
+li svg,aside h1 svg{
     height: 30px;
     fill: white;
-    padding-right: 20px;
+    padding: 0px 20px;
 }
-
 .search{
-    margin-top: 10px;
     margin-left: 10px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 30px;
     border-style: none;
     background-color: #e9ebf3;
     background-image: url(assets/loop.svg);
@@ -52,33 +49,29 @@ li svg{
     background-position: center;
     font-size: 20px;
     transition: width .3s ease-in-out;
-
 }
 .search:focus,input:focus-within:not(:focus){
     width: 500px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: none;
     padding-left: 20px;
-
+    outline: none;
 }
-
-
 .page{
     height: 100vh;
     display: grid;
-    grid-template-columns:20% 80% ;
+    grid-template-columns: 1fr 5fr ;
     color: white;  
 }
 aside{
     display: grid;
-    grid-template-rows: 10% 45%;        
-    background-color: #2cace7;
+    grid-template-rows: 10% 40%;        
+    background-color: #f68db5;
     font-weight: bold;
     font-size: 20px;
-    
-    
 } 
 nav{
+    margin-top: 20px;
     display: flex;
     justify-content:space-between;
     position: relative;
@@ -88,9 +81,8 @@ nav .acc{
     height: 50px;
     width: 50px;
     position: absolute;
-    right: 250px;
+    right: 225px;
     border-radius: 50%;
-
 }
 nav .bell{
     position: absolute;
@@ -101,13 +93,10 @@ nav .bell{
 nav p {
     color: black;
     position: absolute;
-    right: 60px;
+    right: 40px;
     font-size: 20px;
     font-weight:bolder;
-
 }
-
-
 .searchBar{
     border-radius: 30px;
     height: 32px;
@@ -119,6 +108,9 @@ header{
     display: flex;
     flex-direction: column;
     height:200px;
+    background-image: url(https://codecanyon.img.customer.envatousercontent.com/files/382231196/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=480d1dc02ad251141e3db927eb2e1759);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header div{
     display: flex;
@@ -131,16 +123,24 @@ header img{
     height: 75px;
     width: 75px;
     border-radius: 50%;
+    cursor: pointer;
 }
-header .buttons div{
+
+.buttons div{
     display: flex;
     justify-content: center;
     height: 50px;
     width: 100px;
-    background-color: #2cace7;
+    background-color: #e9ebf3;
     border-radius: 25px;
     cursor: pointer;
     margin: 0 10px;
+    color: black;
+    transition: .3s;
+}
+.buttons div:hover{
+    background-color: #dab2cc;
+    color: white;
 }
 .picText{
     display: flex;
@@ -160,9 +160,7 @@ header .buttons div{
     grid-template-rows: 10% repeat(3,1fr);
     width: 70%;
     height: 70%;
-    gap: 10px;
-    
-    
+    gap: 10px; 
 }
 .title{
     color: black;
@@ -178,7 +176,7 @@ header .buttons div{
     background-color: white;
     margin-left: 50px;
     border-radius: 10px;
-    border-left: 10px solid #ffa500;
+    border-left: 10px solid #fec750;
     color: black;
     margin-bottom: 20px;
 }
@@ -194,7 +192,7 @@ header .buttons div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70%;
+    height: 79%;
     width: 500px;
     color: black;
     position: relative;
@@ -209,28 +207,33 @@ header .buttons div{
 }
 #a{
     margin-left: 40px;
-    height: 40%;
+    height: 43%;
     width: 100%;
     font-weight: bolder;
     font-size: 22px;
-    top: 80px;
+    top: 48px;
     position: absolute;
 }
 #t{
     margin-left: 40px;
-    height: 40%;
+    height: 54%;
     width: 100%;
     font-size: 22px;
     font-weight: bolder;
-    top: 590px;
+    top: 475px;
     position: absolute;
 }
+.trend{
+    background-image: url(https://imgix.bustle.com/uploads/image/2022/11/29/86ac62e3-b5e2-45a7-9c18-a4fd868143b7-spotify_2022wrapped_toplist_4x5_most-viral-artists-globally.jpg?w=414&h=518&fit=crop&crop=faces&auto=format%2Ccompress);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h3{
-    font-size: 22px;
-    padding: 10px;
+    font-size: 20px;
+
 }
 .ann p {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
     padding-left: 20px;
 }
@@ -239,7 +242,8 @@ h3{
 
 }
 hr{
-    margin: 5px;
+    margin-top: 15px    ;
+    margin-left: 15px;
     width: 90%;
-    justify-content: center;
+    
 }
