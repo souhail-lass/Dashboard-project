@@ -33,8 +33,8 @@ h1{
 }
 li svg,aside h1 svg{
     height: 30px;
-    fill: white;
     padding: 0px 20px;
+    fill: white;
 }
 .search{
     margin-left: 10px;
@@ -56,19 +56,21 @@ li svg,aside h1 svg{
     background-image: none;
     padding-left: 20px;
     outline: none;
+    
 }
+
 .page{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr ;
-    color: white;  
 }
 aside{
     display: grid;
-    grid-template-rows: 10% 40%;        
-    background-color: #f68db5;
+    grid-template-rows: 10% 40%;  
+    background-color: #f26ebf;
     font-weight: bold;
     font-size: 20px;
+    color: white;
 } 
 nav{
     margin-top: 20px;
@@ -108,7 +110,6 @@ header{
     display: flex;
     flex-direction: column;
     height:200px;
-    background-image: url(https://codecanyon.img.customer.envatousercontent.com/files/382231196/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=480d1dc02ad251141e3db927eb2e1759);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -139,7 +140,7 @@ header img{
     transition: .3s;
 }
 .buttons div:hover{
-    background-color: #dab2cc;
+    background-color: #f26ebf;
     color: white;
 }
 .picText{
@@ -150,7 +151,7 @@ header img{
 }
 .picText p{
     margin-left: 30px;
-    font-weight: bolder;
+    font-weight: bolder;    
 }
 
 
@@ -176,12 +177,13 @@ header img{
     background-color: white;
     margin-left: 50px;
     border-radius: 10px;
-    border-left: 10px solid #fec750;
+    border-left: 10px solid #d4d4d4;
     color: black;
     margin-bottom: 20px;
 }
 .content div span{
-    color: orange;
+    color: black;
+    font-weight: bolder;
 }
 .container{
     display: flex;
